@@ -1,0 +1,138 @@
+/* ==== ESTILOS GENERALES ==== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9fa; /* Fondo más claro */
+    color: #333; /* Texto ligeramente más suave */
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== ENCABEZADO ==== */
+header {
+    background-color: #e3e4e8; /* Suaviza el fondo del encabezado */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #121212; /* Texto más suave */
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+    background-color: #070707; /* Fondo oscuro */
+}
+
+/* Personalizar el título del navbar */
+.navbar-brand {
+    font-size: 2rem; /* Tamaño más grande */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; /* Cambiar la fuente */
+    font-weight: bold; /* Negrita */
+    color: #fff; /* Asegurar que el color sea blanco */
+    transition: color 0.3s ease; /* Efecto de transición al pasar el cursor */
+  }
+  
+  .navbar-brand:hover {
+    color: #a6c8ff; /* Cambiar el color al pasar el cursor */
+  }
+
+
+
+/* ==== MAIN ==== */
+main h2 {
+    color: #5a5a5a; /* Tono más suave para los títulos */
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555; /* Texto más suave */
+}
+
+/* ==== TARJETAS ==== */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-img-top {
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* ==== BOTONES ==== */
+.btn-primary {
+    background-color: #1b4ef6; /* Azul claro */
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #599fef; /* Azul más oscuro */
+}
+
+/* ==== FORMULARIOS ==== */
+.form-control:focus {
+    box-shadow: 0 0 5px #a6c8ff; /* Azul claro */
+    border-color: #a6c8ff;
+}
+
+.invalid-feedback {
+    font-size: 0.9rem;
+    color: #e57373; /* Rojo más suave */
+}
+
+.form-check-label {
+    font-weight: 500;
+    color: #555; /* Texto más suave */
+}
+
+/* ==== FOOTER ==== */
+footer {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ddd;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #a6c8ff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* ==== CARRUSEL DE GALERÍA ==== */
+.carousel-item img {
+    object-fit: cover;
+    height: 450px;
+    border-radius: 10px; /* Bordes redondeados para suavizar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* ==== RESPONSIVE PERSONALIZADO ==== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+}
