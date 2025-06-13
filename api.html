@@ -4,28 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Videoclips de LP - Fan Page</title>
-        <link rel="icon" href="img/mic.ico/microphone.png" type="image/x-icon" />
+    <link rel="icon" href="img/mic.ico/microphone.png" type="image/x-icon" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link href="css/estilos.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- navbar: menú de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">LP Fan Page</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
-            <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
-            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-            <li class="nav-item"><a class="nav-link active" href="api.html">Videoclips</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="biografia.html">Biografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="discografia.html">Discografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="api.html">Videoclips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -35,11 +58,19 @@
     <section class="container my-5">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <img src="https://i.ytimg.com/vi/wDjeBNv6ip0/maxresdefault.jpg" alt="LP Videoclips" class="img-fluid rounded shadow">
+          <img
+            src="https://i.ytimg.com/vi/wDjeBNv6ip0/maxresdefault.jpg"
+            alt="LP Videoclips"
+            class="img-fluid rounded shadow"
+          />
         </div>
         <div class="col-lg-6 text-center text-lg-start">
           <h1 class="mb-3 text-primary">Videoclips de LP</h1>
-          <p class="lead">Sumergite en el universo visual de LP. Acá vas a encontrar sus videoclips más icónicos, opiniones de fans y recomendaciones para descubrir nuevas canciones.</p>
+          <p class="lead">
+            Sumergite en el universo visual de LP. Acá vas a encontrar sus
+            videoclips más icónicos, opiniones de fans y recomendaciones para
+            descubrir nuevas canciones.
+          </p>
           <a href="#video-list" class="btn btn-primary mt-2">Ver videoclips</a>
         </div>
       </div>
@@ -50,13 +81,25 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="bg-white rounded shadow p-4">
-            <h2 class="text-center mb-4 text-primary">Opiniones sobre los videoclips</h2>
+            <h2 class="text-center mb-4 text-primary">
+              Opiniones sobre los videoclips
+            </h2>
             <form id="form-opinion" class="mb-4">
               <div class="mb-3">
-                <label for="opinion" class="form-label">¿Qué te pareció algún videoclip?</label>
-                <textarea id="opinion" class="form-control border-primary" rows="3" placeholder="Escribí tu opinión acá..." required></textarea>
+                <label for="opinion" class="form-label"
+                  >¿Qué te pareció algún videoclip?</label
+                >
+                <textarea
+                  id="opinion"
+                  class="form-control border-primary"
+                  rows="3"
+                  placeholder="Escribí tu opinión acá..."
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar opinión</button>
+              <button type="submit" class="btn btn-primary">
+                Enviar opinión
+              </button>
             </form>
             <div id="opiniones-lista">
               <!-- Aquí se mostrarán las opiniones enviadas -->
@@ -69,7 +112,10 @@
     <!-- sección 3: galería de videoclips -->
     <section class="container my-5">
       <h2 class="mb-4 text-center text-primary">Galería de Videoclips</h2>
-      <div id="video-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div
+        id="video-list"
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+      >
         <!-- aquí se mostrarán los videoclips cargados desde la API -->
       </div>
     </section>
@@ -79,20 +125,36 @@
       <div class="row g-4">
         <div class="col-md-6">
           <div class="bg-white rounded shadow p-4 h-100">
-            <h3 class="text-primary mb-3"><i class="bi bi-star-fill me-2"></i>Recomendados</h3>
+            <h3 class="text-primary mb-3">
+              <i class="bi bi-star-fill me-2"></i>Recomendados
+            </h3>
             <ul class="mb-0">
-              <li><strong>Lost on You</strong> - El hit que la llevó al mundo.</li>
-              <li><strong>Muddy Waters</strong> - Un videoclip con mucha fuerza visual.</li>
-              <li><strong>When We're High</strong> - Perfecto para descubrir otra faceta de LP.</li>
+              <li>
+                <strong>Lost on You</strong> - El hit que la llevó al mundo.
+              </li>
+              <li>
+                <strong>Muddy Waters</strong> - Un videoclip con mucha fuerza
+                visual.
+              </li>
+              <li>
+                <strong>When We're High</strong> - Perfecto para descubrir otra
+                faceta de LP.
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-md-6">
           <div class="bg-white rounded shadow p-4 h-100">
-            <h3 class="text-primary mb-3"><i class="bi bi-lightbulb me-2"></i>Curiosidades</h3>
+            <h3 class="text-primary mb-3">
+              <i class="bi bi-lightbulb me-2"></i>Curiosidades
+            </h3>
             <ul class="mb-0">
-              <li>LP suele participar en la dirección creativa de sus videos.</li>
-              <li>Muchos videoclips fueron grabados en escenarios naturales.</li>
+              <li>
+                LP suele participar en la dirección creativa de sus videos.
+              </li>
+              <li>
+                Muchos videoclips fueron grabados en escenarios naturales.
+              </li>
               <li>En "Lost on You" aparecen referencias a su vida personal.</li>
             </ul>
           </div>
@@ -103,14 +165,14 @@
     <!-- opiniones JS -->
     <script>
       // guardar y mostrar opiniones en la misma sesión
-      const form = document.getElementById('form-opinion');
-      const lista = document.getElementById('opiniones-lista');
+      const form = document.getElementById("form-opinion");
+      const lista = document.getElementById("opiniones-lista");
 
-      form.addEventListener('submit', function(e) {
+      form.addEventListener("submit", function (e) {
         e.preventDefault();
-        const texto = document.getElementById('opinion').value.trim();
+        const texto = document.getElementById("opinion").value.trim();
         if (texto) {
-          const div = document.createElement('div');
+          const div = document.createElement("div");
           div.className = "alert alert-secondary";
           div.textContent = texto;
           lista.prepend(div);
@@ -157,68 +219,96 @@
               container.appendChild(card);
             });
           } else {
-            container.innerHTML = '<p class="text-warning">No se encontraron videoclips.</p>';
+            container.innerHTML =
+              '<p class="text-warning">No se encontraron videoclips.</p>';
           }
         } catch (error) {
-          container.innerHTML = '<p class="text-danger">Error al cargar los videoclips. Intenta nuevamente.</p>';
+          container.innerHTML =
+            '<p class="text-danger">Error al cargar los videoclips. Intenta nuevamente.</p>';
         }
       }
 
       window.onload = cargarVideoclips;
     </script>
 
-<!-- ...footer... -->
-<footer class="bg-dark text-white py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h5 class="text-primary">Sobre LP Fan Page</h5>
-        <p>
-          Un sitio dedicado a los fans de LP, donde puedes explorar su
-          música, biografía, galería y más.
-        </p>
+    <!-- ...footer... -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-primary">Sobre LP Fan Page</h5>
+            <p>
+              Un sitio dedicado a los fans de LP, donde puedes explorar su
+              música, biografía, galería y más.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-primary">Enlaces rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-primary text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="biografia.html"
+                  class="text-primary text-decoration-none"
+                  >Biografía</a
+                >
+              </li>
+              <li>
+                <a
+                  href="discografia.html"
+                  class="text-primary text-decoration-none"
+                  >Discografía</a
+                >
+              </li>
+              <li>
+                <a href="galeria.html" class="text-primary text-decoration-none"
+                  >Galería</a
+                >
+              </li>
+              <li>
+                <a href="api.html" class="text-primary text-decoration-none"
+                  >Videoclips</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contacto.html"
+                  class="text-primary text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5 class="text-primary">Síguenos</h5>
+            <a
+              href="https://www.instagram.com/iamlpofficial/"
+              target="_blank"
+              class="text-lp me-3"
+            >
+              <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/iamLP/"
+              target="_blank"
+              class="text-lp me-3"
+            >
+              <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
+            </a>
+            <a href="https://twitter.com/iamlp" target="_blank" class="text-lp">
+              <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>&copy; 2025 LP Fan Page. Todos los derechos reservados.</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h5 class="text-primary">Enlaces rápidos</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="index.html" class="text-primary text-decoration-none">Inicio</a>
-          </li>
-          <li>
-            <a href="biografia.html" class="text-primary text-decoration-none">Biografía</a>
-          </li>
-          <li>
-            <a href="discografia.html" class="text-primary text-decoration-none">Discografía</a>
-          </li>
-          <li>
-            <a href="galeria.html" class="text-primary text-decoration-none">Galería</a>
-          </li>
-          <li>
-            <a href="api.html" class="text-primary text-decoration-none">Videoclips</a>
-          </li>
-          <li>
-            <a href="contacto.html" class="text-primary text-decoration-none">Contacto</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4 text-center">
-        <h5 class="text-primary">Síguenos</h5>
-        <a href="https://www.instagram.com/iamlpofficial/" target="_blank" class="text-lp me-3">
-          <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
-        </a>
-        <a href="https://www.facebook.com/iamLP/" target="_blank" class="text-lp me-3">
-          <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
-        </a>
-        <a href="https://twitter.com/iamlp" target="_blank" class="text-lp">
-          <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
-        </a>
-      </div>
-    </div>
-    <div class="text-center mt-3">
-      <p>&copy; 2025 LP Fan Page. Todos los derechos reservados.</p>
-    </div>
-  </div>
-</footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

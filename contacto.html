@@ -1,162 +1,252 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto - LP Fan Page</title>
-      <link rel="icon" href="img/mic.ico/microphone.png" type="image/x-icon" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - LP Fan Page</title>
+    <link rel="icon" href="img/mic.ico/microphone.png" type="image/x-icon" />
 
-  <!-- enlace a bootstrap para estilos prediseñados -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- enlace al archivo de estilos personalizados -->
-  <link href="css/estilos.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-  
-</head>
-<body>
-  <!-- navbar: menú de navegación -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
-      <div class="container">
-        <!-- título del sitio -->
-        <a class="navbar-brand" href="index.html">LP Fan Page</a>
-        <!-- botón para desplegar el menú en dispositivos móviles -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
+    <!-- enlace a bootstrap para estilos prediseñados -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- enlace al archivo de estilos personalizados -->
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar: menú de navegación -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #000000"
+      >
+        <div class="container">
+          <!-- título del sitio -->
+          <a class="navbar-brand" href="index.html">LP Fan Page</a>
+          <!-- botón para desplegar el menú en dispositivos móviles -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- enlaces del menú -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="biografia.html">Biografía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="discografia.html">Discografía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="api.html">Videoclips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- contenido principal -->
+    <main class="container my-5">
+      <!-- título del formulario -->
+      <h2 class="mb-4 text-center text-primary">Formulario de Contacto</h2>
+
+      <!-- formulario de contacto -->
+      <form id="form-contacto" novalidate>
+        <!-- campo: nombre -->
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo *</label>
+          <input
+            type="text"
+            class="form-control border-primary"
+            id="nombre"
+            placeholder="Tu nombre"
+            required
+          />
+          <div class="invalid-feedback">
+            Por favor, ingresa tu nombre completo.
+          </div>
+        </div>
+
+        <!-- campo: correo electrónico -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico *</label>
+          <input
+            type="email"
+            class="form-control border-primary"
+            id="email"
+            placeholder="nombre@ejemplo.com"
+            required
+          />
+          <div class="invalid-feedback">
+            Por favor, ingresa un email válido.
+          </div>
+        </div>
+
+        <!-- campo: teléfono -->
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono (opcional)</label>
+          <input
+            type="tel"
+            class="form-control border-primary"
+            id="telefono"
+            placeholder="Solo números, 7 a 15 dígitos"
+            pattern="^\d{7,15}$"
+          />
+          <div class="invalid-feedback">Solo números entre 7 y 15 dígitos.</div>
+        </div>
+
+        <!-- campo: asunto -->
+        <div class="mb-3">
+          <label for="asunto" class="form-label">Asunto *</label>
+          <select id="asunto" class="form-select border-primary" required>
+            <option value="" selected disabled>Selecciona un asunto</option>
+            <option value="reserva">Consulta</option>
+            <option value="info">Información</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="colaboracion">Colaboración</option>
+            <option value="otro">Otro</option>
+          </select>
+          <div class="invalid-feedback">Debes seleccionar un asunto.</div>
+        </div>
+
+        <!-- campo: mensaje -->
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje *</label>
+          <textarea
+            id="mensaje"
+            class="form-control border-primary"
+            rows="4"
+            placeholder="Escribe tu mensaje aquí..."
+            required
+          ></textarea>
+          <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
+        </div>
+
+        <!-- campo: términos y condiciones -->
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="terminos"
+            required
+          />
+          <label class="form-check-label" for="terminos"
+            >Acepto los términos y condiciones *</label
+          >
+          <div class="invalid-feedback">
+            Debes aceptar los términos para continuar.
+          </div>
+        </div>
+
+        <!-- botón de envío -->
+        <button type="submit" class="btn btn-primary w-100">
+          Enviar mensaje
         </button>
-        <!-- enlaces del menú -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
-            <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
-            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-            <li class="nav-item"><a class="nav-link" href="api.html">Videoclips</a></li>
-            <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
-          </ul>
+      </form>
+    </main>
+
+    <!-- ...footer... -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-primary">Sobre LP Fan Page</h5>
+            <p>
+              Un sitio dedicado a los fans de LP, donde puedes explorar su
+              música, biografía, galería y más.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-primary">Enlaces rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-primary text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="biografia.html"
+                  class="text-primary text-decoration-none"
+                  >Biografía</a
+                >
+              </li>
+              <li>
+                <a
+                  href="discografia.html"
+                  class="text-primary text-decoration-none"
+                  >Discografía</a
+                >
+              </li>
+              <li>
+                <a href="galeria.html" class="text-primary text-decoration-none"
+                  >Galería</a
+                >
+              </li>
+              <li>
+                <a href="api.html" class="text-primary text-decoration-none"
+                  >Videoclips</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contacto.html"
+                  class="text-primary text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5 class="text-primary">Síguenos</h5>
+            <a
+              href="https://www.instagram.com/iamlpofficial/"
+              target="_blank"
+              class="text-lp me-3"
+            >
+              <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/iamLP/"
+              target="_blank"
+              class="text-lp me-3"
+            >
+              <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
+            </a>
+            <a href="https://twitter.com/iamlp" target="_blank" class="text-lp">
+              <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>&copy; 2025 LP Fan Page. Todos los derechos reservados.</p>
         </div>
       </div>
-    </nav>
-  </header>
+    </footer>
 
-  <!-- contenido principal -->
-  <main class="container my-5">
-    <!-- título del formulario -->
-    <h2 class="mb-4 text-center text-primary">Formulario de Contacto</h2>
-
-    <!-- formulario de contacto -->
-    <form id="form-contacto" novalidate>
-      <!-- campo: nombre -->
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre completo *</label>
-        <input type="text" class="form-control border-primary" id="nombre" placeholder="Tu nombre" required />
-        <div class="invalid-feedback">Por favor, ingresa tu nombre completo.</div>
-      </div>
-
-      <!-- campo: correo electrónico -->
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo electrónico *</label>
-        <input type="email" class="form-control border-primary" id="email" placeholder="nombre@ejemplo.com" required />
-        <div class="invalid-feedback">Por favor, ingresa un email válido.</div>
-      </div>
-
-      <!-- campo: teléfono -->
-      <div class="mb-3">
-        <label for="telefono" class="form-label">Teléfono (opcional)</label>
-        <input type="tel" class="form-control border-primary" id="telefono" placeholder="Solo números, 7 a 15 dígitos" pattern="^\d{7,15}$" />
-        <div class="invalid-feedback">Solo números entre 7 y 15 dígitos.</div>
-      </div>
-
-      <!-- campo: asunto -->
-      <div class="mb-3">
-        <label for="asunto" class="form-label">Asunto *</label>
-        <select id="asunto" class="form-select border-primary" required>
-          <option value="" selected disabled>Selecciona un asunto</option>
-          <option value="reserva">Consulta</option>
-          <option value="info">Información</option>
-          <option value="sugerencia">Sugerencia</option>
-          <option value="reclamo">Reclamo</option>
-          <option value="colaboracion">Colaboración</option>
-          <option value="otro">Otro</option>
-        </select>
-        <div class="invalid-feedback">Debes seleccionar un asunto.</div>
-      </div>
-
-      <!-- campo: mensaje -->
-      <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje *</label>
-        <textarea id="mensaje" class="form-control border-primary" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
-      </div>
-
-      <!-- campo: términos y condiciones -->
-      <div class="form-check mb-4">
-        <input class="form-check-input" type="checkbox" id="terminos" required />
-        <label class="form-check-label" for="terminos">Acepto los términos y condiciones *</label>
-        <div class="invalid-feedback">Debes aceptar los términos para continuar.</div>
-      </div>
-
-      <!-- botón de envío -->
-      <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
-    </form>
-  </main>
-
-<!-- ...footer... -->
-<footer class="bg-dark text-white py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h5 class="text-primary">Sobre LP Fan Page</h5>
-        <p>
-          Un sitio dedicado a los fans de LP, donde puedes explorar su
-          música, biografía, galería y más.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h5 class="text-primary">Enlaces rápidos</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="index.html" class="text-primary text-decoration-none">Inicio</a>
-          </li>
-          <li>
-            <a href="biografia.html" class="text-primary text-decoration-none">Biografía</a>
-          </li>
-          <li>
-            <a href="discografia.html" class="text-primary text-decoration-none">Discografía</a>
-          </li>
-          <li>
-            <a href="galeria.html" class="text-primary text-decoration-none">Galería</a>
-          </li>
-          <li>
-            <a href="api.html" class="text-primary text-decoration-none">Videoclips</a>
-          </li>
-          <li>
-            <a href="contacto.html" class="text-primary text-decoration-none">Contacto</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4 text-center">
-        <h5 class="text-primary">Síguenos</h5>
-        <a href="https://www.instagram.com/iamlpofficial/" target="_blank" class="text-lp me-3">
-          <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
-        </a>
-        <a href="https://www.facebook.com/iamLP/" target="_blank" class="text-lp me-3">
-          <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
-        </a>
-        <a href="https://twitter.com/iamlp" target="_blank" class="text-lp">
-          <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
-        </a>
-      </div>
-    </div>
-    <div class="text-center mt-3">
-      <p>&copy; 2025 LP Fan Page. Todos los derechos reservados.</p>
-    </div>
-  </div>
-</footer>
-
-  <!-- enlace al script de bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- enlace al archivo de validaciones -->
-  <script src="js/validaciones.js"></script>
-</body>
+    <!-- enlace al script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- enlace al archivo de validaciones -->
+    <script src="js/validaciones.js"></script>
+  </body>
 </html>

@@ -1,297 +1,389 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Discografía - LP Fan Page</title>
-      <link rel="icon" href="img/mic.ico/microphone.png" type="image/x-icon" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Discografía - LP Fan Page</title>
+    <link rel="icon" href="img/mic.ico/microphone.png" type="image/x-icon" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/estilos.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-</head>
-<body>
-  <!-- navbar: menú de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">LP Fan Page</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
-          <li class="nav-item"><a class="nav-link active" href="discografia.html">Discografía</a></li>
-          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="api.html">Videoclips</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        </ul>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar: menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">LP Fan Page</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="biografia.html">Biografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="discografia.html">Discografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="api.html">Videoclips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- sección 1: presentación de la discografía -->
-  <section class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-lg-5 mb-4 mb-lg-0 text-center">
-        <img src="https://estaticos-cdn.prensaiberica.es/clip/32f37d15-8c3e-4921-a0a7-bcc21902ad06_16-9-aspect-ratio_default_0.jpg" alt="LP Discografía" class="img-fluid rounded shadow" style="max-height: 350px; object-fit: cover;">
+    <!-- sección 1: presentación de la discografía -->
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+          <img
+            src="https://estaticos-cdn.prensaiberica.es/clip/32f37d15-8c3e-4921-a0a7-bcc21902ad06_16-9-aspect-ratio_default_0.jpg"
+            alt="LP Discografía"
+            class="img-fluid rounded shadow"
+            style="max-height: 350px; object-fit: cover"
+          />
+        </div>
+        <div class="col-lg-7">
+          <h1 class="mb-3 text-primary">Discografía de LP</h1>
+          <p class="lead">
+            LP tiene una carrera llena de canciones inolvidables y discos que
+            marcaron a sus fans. Acá podés conocer todos sus álbumes y descubrir
+            tus temas favoritos.
+          </p>
+        </div>
       </div>
-      <div class="col-lg-7">
-        <h1 class="mb-3 text-primary">Discografía de LP</h1>
-        <p class="lead">LP tiene una carrera llena de canciones inolvidables y discos que marcaron a sus fans. Acá podés conocer todos sus álbumes y descubrir tus temas favoritos.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- sección 2: álbumes -->
-  <section class="container my-5 sin-hover">
-    <h2 class="text-center mb-4 text-primary">Álbumes de estudio</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <!-- Álbum 1: Heart-Shaped Scar -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Heart-Shaped_Scar.jpg" class="card-img-top" alt="Heart-Shaped Scar">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Heart-Shaped Scar (2001)</h5>
-            <ul>
-              <li>Wasted</li>
-              <li>Perfect</li>
-              <li>Heart-Shaped Scar</li>
-              <li>Love Will Keep You Up All Night</li>
-              <li>Disconnected</li>
-              <li>When I'm Not With You</li>
-              <li>Gasoline</li>
-              <li>Greenbriar</li>
-              <li>Change of Scene</li>
-              <li>Knock Yourself Out</li>
-              <li>One of Those Days</li>
+    <!-- sección 2: álbumes -->
+    <section class="container my-5 sin-hover">
+      <h2 class="text-center mb-4 text-primary">Álbumes de estudio</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Álbum 1: Heart-Shaped Scar -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/3/35/Heart-Shaped_Scar.jpg"
+              class="card-img-top"
+              alt="Heart-Shaped Scar"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Heart-Shaped Scar (2001)</h5>
+              <ul>
+                <li>Wasted</li>
+                <li>Perfect</li>
+                <li>Heart-Shaped Scar</li>
+                <li>Love Will Keep You Up All Night</li>
+                <li>Disconnected</li>
+                <li>When I'm Not With You</li>
+                <li>Gasoline</li>
+                <li>Greenbriar</li>
+                <li>Change of Scene</li>
+                <li>Knock Yourself Out</li>
+                <li>One of Those Days</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Álbum 2: Suburban Sprawl & Alcohol -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273712101166a8aa0e39332af43"
+              class="card-img-top"
+              alt="Suburban Sprawl & Alcohol"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">
+                Suburban Sprawl & Alcohol (2004)
+              </h5>
+              <ul>
+                <li>Strange</li>
+                <li>Good With You</li>
+                <li>Suburban Sprawl & Alcohol</li>
+                <li>All the Pretty Faces</li>
+                <li>Sorry</li>
+                <li>It's Over</li>
+                <li>Wanna Be</li>
+                <li>Little Death</li>
+                <li>Damage Is Done</li>
+                <li>Get Over Yourself</li>
+                <li>Into the Wild</li>
+                <li>Blood and Water</li>
+                <li>Down the Mountain</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Álbum 3: Forever for Now -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/2/28/LP_Forever_for_Now.jpg"
+              class="card-img-top"
+              alt="Forever for Now"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Forever for Now (2014)</h5>
+              <ul>
+                <li>Heavenly Light</li>
+                <li>Nights Like This</li>
+                <li>One Last Mistake</li>
+                <li>Tokyo Sunrise</li>
+                <li>Salvation</li>
+                <li>Your Town</li>
+                <li>Free to Love</li>
+                <li>Levitator</li>
+                <li>Someday</li>
+                <li>Forever for Now</li>
+                <li>Into the Wild</li>
+                <li>Wildflowers</li>
+                <li>Stolen</li>
+                <li>Halo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Álbum 4: Lost on You -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273edd52840c88ba5e7163071cf"
+              class="card-img-top"
+              alt="Lost on You"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Lost on You (2016)</h5>
+              <ul>
+                <li>Muddy Waters</li>
+                <li>No Witness</li>
+                <li>Lost on You</li>
+                <li>Other People</li>
+                <li>Tightrope</li>
+                <li>Up Against Me</li>
+                <li>Suspicion</li>
+                <li>Death Valley</li>
+                <li>Strange</li>
+                <li>You Want It All</li>
+                <li>When We're High</li>
+                <li>Switchblade</li>
+                <li>Levelland</li>
+                <li>Long Way To Go To Die</li>
+                <li>Forever For Now (Bonus Track)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Álbum 5: Heart to Mouth -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://static.qobuz.com/images/covers/sb/hc/vbm6vz5j2hcsb_600.jpg"
+              class="card-img-top"
+              alt="Heart to Mouth"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Heart to Mouth (2018)</h5>
+              <ul>
+                <li>Dreamcatcher</li>
+                <li>When I'm Over You</li>
+                <li>One Night in the Sun</li>
+                <li>Girls Go Wild</li>
+                <li>Recovery</li>
+                <li>The Power</li>
+                <li>Dreamer</li>
+                <li>House on Fire</li>
+                <li>Hey Nice to Know Ya</li>
+                <li>Die for Your Love</li>
+                <li>Shaken</li>
+                <li>Special</li>
+                <li>Science</li>
+                <li>Recovery (Acoustic)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Álbum 6: Churches -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/LP_Churches_cover.jpg/250px-LP_Churches_cover.jpg"
+              class="card-img-top"
+              alt="Churches"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Churches (2021)</h5>
+              <ul>
+                <li>When We Touch</li>
+                <li>Goodbye</li>
+                <li>Everybody's Falling in Love</li>
+                <li>The One That You Love</li>
+                <li>Rainbow</li>
+                <li>One Last Time</li>
+                <li>My Body</li>
+                <li>Angels</li>
+                <li>How Low Can You Go</li>
+                <li>Yes</li>
+                <li>Conversation</li>
+                <li>Safe Here</li>
+                <li>Can't Let You Leave</li>
+                <li>Churches</li>
+                <li>Poem</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección 3: singles destacados -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4 text-primary">Singles destacados</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Lost on You</h5>
+              <p class="card-text">
+                El mayor éxito de LP, con millones de reproducciones en todo el
+                mundo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Muddy Waters</h5>
+              <p class="card-text">
+                Canción reconocida por su fuerza y por aparecer en la serie
+                "Orange Is the New Black".
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Girls Go Wild</h5>
+              <p class="card-text">
+                Uno de los temas más bailables y populares de su carrera.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección 4: premios y reconocimientos -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4 text-primary">Premios y reconocimientos</h2>
+      <ul>
+        <li>2017: Premio X a Mejor Canción ("Lost on You")</li>
+        <li>2018: Nominación a Artista Revelación en los Premios Y</li>
+        <!-- Agrega más premios o reconocimientos -->
+      </ul>
+    </section>
+
+    <!-- ...footer... -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-primary">Sobre LP Fan Page</h5>
+            <p>
+              Un sitio dedicado a los fans de LP, donde puedes explorar su
+              música, biografía, galería y más.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-primary">Enlaces rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-primary text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="biografia.html"
+                  class="text-primary text-decoration-none"
+                  >Biografía</a
+                >
+              </li>
+              <li>
+                <a
+                  href="discografia.html"
+                  class="text-primary text-decoration-none"
+                  >Discografía</a
+                >
+              </li>
+              <li>
+                <a href="galeria.html" class="text-primary text-decoration-none"
+                  >Galería</a
+                >
+              </li>
+              <li>
+                <a href="api.html" class="text-primary text-decoration-none"
+                  >Videoclips</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contacto.html"
+                  class="text-primary text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <!-- Álbum 2: Suburban Sprawl & Alcohol -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://i.scdn.co/image/ab67616d0000b273712101166a8aa0e39332af43" class="card-img-top" alt="Suburban Sprawl & Alcohol">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Suburban Sprawl & Alcohol (2004)</h5>
-            <ul>
-              <li>Strange</li>
-              <li>Good With You</li>
-              <li>Suburban Sprawl & Alcohol</li>
-              <li>All the Pretty Faces</li>
-              <li>Sorry</li>
-              <li>It's Over</li>
-              <li>Wanna Be</li>
-              <li>Little Death</li>
-              <li>Damage Is Done</li>
-              <li>Get Over Yourself</li>
-              <li>Into the Wild</li>
-              <li>Blood and Water</li>
-              <li>Down the Mountain</li>
-            </ul>
+          <div class="col-md-4 text-center">
+            <h5 class="text-primary">Síguenos</h5>
+            <a
+              href="https://www.instagram.com/iamlpofficial/"
+              target="_blank"
+              class="text-lp me-3"
+            >
+              <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/iamLP/"
+              target="_blank"
+              class="text-lp me-3"
+            >
+              <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
+            </a>
+            <a href="https://twitter.com/iamlp" target="_blank" class="text-lp">
+              <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
+            </a>
           </div>
         </div>
-      </div>
-      <!-- Álbum 3: Forever for Now -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://upload.wikimedia.org/wikipedia/en/2/28/LP_Forever_for_Now.jpg" class="card-img-top" alt="Forever for Now">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Forever for Now (2014)</h5>
-            <ul>
-              <li>Heavenly Light</li>
-              <li>Nights Like This</li>
-              <li>One Last Mistake</li>
-              <li>Tokyo Sunrise</li>
-              <li>Salvation</li>
-              <li>Your Town</li>
-              <li>Free to Love</li>
-              <li>Levitator</li>
-              <li>Someday</li>
-              <li>Forever for Now</li>
-              <li>Into the Wild</li>
-              <li>Wildflowers</li>
-              <li>Stolen</li>
-              <li>Halo</li>
-            </ul>
-          </div>
+        <div class="text-center mt-3">
+          <p>&copy; 2025 LP Fan Page. Todos los derechos reservados.</p>
         </div>
       </div>
-      <!-- Álbum 4: Lost on You -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://i.scdn.co/image/ab67616d0000b273edd52840c88ba5e7163071cf" class="card-img-top" alt="Lost on You">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Lost on You (2016)</h5>
-            <ul>
-              <li>Muddy Waters</li>
-              <li>No Witness</li>
-              <li>Lost on You</li>
-              <li>Other People</li>
-              <li>Tightrope</li>
-              <li>Up Against Me</li>
-              <li>Suspicion</li>
-              <li>Death Valley</li>
-              <li>Strange</li>
-              <li>You Want It All</li>
-              <li>When We're High</li>
-              <li>Switchblade</li>
-              <li>Levelland</li>
-              <li>Long Way To Go To Die</li>
-              <li>Forever For Now (Bonus Track)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Álbum 5: Heart to Mouth -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://static.qobuz.com/images/covers/sb/hc/vbm6vz5j2hcsb_600.jpg" class="card-img-top" alt="Heart to Mouth">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Heart to Mouth (2018)</h5>
-            <ul>
-              <li>Dreamcatcher</li>
-              <li>When I'm Over You</li>
-              <li>One Night in the Sun</li>
-              <li>Girls Go Wild</li>
-              <li>Recovery</li>
-              <li>The Power</li>
-              <li>Dreamer</li>
-              <li>House on Fire</li>
-              <li>Hey Nice to Know Ya</li>
-              <li>Die for Your Love</li>
-              <li>Shaken</li>
-              <li>Special</li>
-              <li>Science</li>
-              <li>Recovery (Acoustic)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Álbum 6: Churches -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/LP_Churches_cover.jpg/250px-LP_Churches_cover.jpg" class="card-img-top" alt="Churches">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Churches (2021)</h5>
-            <ul>
-              <li>When We Touch</li>
-              <li>Goodbye</li>
-              <li>Everybody's Falling in Love</li>
-              <li>The One That You Love</li>
-              <li>Rainbow</li>
-              <li>One Last Time</li>
-              <li>My Body</li>
-              <li>Angels</li>
-              <li>How Low Can You Go</li>
-              <li>Yes</li>
-              <li>Conversation</li>
-              <li>Safe Here</li>
-              <li>Can't Let You Leave</li>
-              <li>Churches</li>
-              <li>Poem</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- sección 3: singles destacados -->
-  <section class="container my-5">
-    <h2 class="text-center mb-4 text-primary">Singles destacados</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Lost on You</h5>
-            <p class="card-text">El mayor éxito de LP, con millones de reproducciones en todo el mundo.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Muddy Waters</h5>
-            <p class="card-text">Canción reconocida por su fuerza y por aparecer en la serie "Orange Is the New Black".</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 text-center">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Girls Go Wild</h5>
-            <p class="card-text">Uno de los temas más bailables y populares de su carrera.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- sección 4: premios y reconocimientos -->
-  <section class="container my-5">
-    <h2 class="text-center mb-4 text-primary">Premios y reconocimientos</h2>
-    <ul>
-      <li>2017: Premio X a Mejor Canción ("Lost on You")</li>
-      <li>2018: Nominación a Artista Revelación en los Premios Y</li>
-      <!-- Agrega más premios o reconocimientos -->
-    </ul>
-  </section>
-
-<!-- ...footer... -->
-<footer class="bg-dark text-white py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h5 class="text-primary">Sobre LP Fan Page</h5>
-        <p>
-          Un sitio dedicado a los fans de LP, donde puedes explorar su
-          música, biografía, galería y más.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h5 class="text-primary">Enlaces rápidos</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="index.html" class="text-primary text-decoration-none">Inicio</a>
-          </li>
-          <li>
-            <a href="biografia.html" class="text-primary text-decoration-none">Biografía</a>
-          </li>
-          <li>
-            <a href="discografia.html" class="text-primary text-decoration-none">Discografía</a>
-          </li>
-          <li>
-            <a href="galeria.html" class="text-primary text-decoration-none">Galería</a>
-          </li>
-          <li>
-            <a href="api.html" class="text-primary text-decoration-none">Videoclips</a>
-          </li>
-          <li>
-            <a href="contacto.html" class="text-primary text-decoration-none">Contacto</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4 text-center">
-        <h5 class="text-primary">Síguenos</h5>
-        <a href="https://www.instagram.com/iamlpofficial/" target="_blank" class="text-lp me-3">
-          <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
-        </a>
-        <a href="https://www.facebook.com/iamLP/" target="_blank" class="text-lp me-3">
-          <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
-        </a>
-        <a href="https://twitter.com/iamlp" target="_blank" class="text-lp">
-          <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
-        </a>
-      </div>
-    </div>
-    <div class="text-center mt-3">
-      <p>&copy; 2025 LP Fan Page. Todos los derechos reservados.</p>
-    </div>
-  </div>
-</footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

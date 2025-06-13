@@ -1,164 +1,231 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Inicio - LP Fan Page</title>
-      <link rel="icon" href="img/mic.ico/microphone.png" type="image/x-icon" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio - LP Fan Page</title>
+    <link rel="icon" href="img/mic.ico/microphone.png" type="image/x-icon" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Estilos personalizados -->
-  <link href="css/estilos.css" rel="stylesheet" />
- 
-</head>
-<body>
-  <!-- navbar: menú de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">LP Fan Page</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
-          <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
-          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="api.html">Videoclips</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- contenido principal -->
-  <main class="container my-5">
-    <!-- Bloque centrado con título, subtítulo y botón -->
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center mb-4">
-          <h1 class="mb-4 text-primary">Bienvenido a LP Fan Page</h1>
-          <p class="lead">Explora la vida, música y momentos icónicos de LP. Descubre su discografía, galería de fotos, videoclips y mucho más.</p>
-          <a href="biografia.html" class="btn btn-primary" style="max-width: 250px;">Conoce más sobre LP</a>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Estilos personalizados -->
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar: menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">LP Fan Page</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="biografia.html">Biografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="discografia.html">Discografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="api.html">Videoclips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <!-- Fragmentos de Letras -->
-      <div class="col-lg-8 mb-4">
-        <section>
-          <h2 class="text-center mb-4 text-primary">Fragmentos de Letras</h2>
-          <div id="lyrics-list" class="row row-cols-1 row-cols-md-2 g-4">
-            <!-- aca se mostrarán los fragmentos de letras -->
+    </nav>
+
+    <!-- contenido principal -->
+    <main class="container my-5">
+      <!-- Bloque centrado con título, subtítulo y botón -->
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center mb-4">
+            
+<!-- Banner con logo de fondo y h1 encima -->
+<div class="banner-logo-lp d-flex align-items-center justify-content-center mb-4" style="height: 180px;">
+  <h1 class="text-white text-center display-4" style="text-shadow: 2px 2px 8px #000;">Bienvenidos a LP Fan Page</h1>
+</div>            <p class="lead">
+              Explora la vida, música y momentos icónicos de LP. Descubre su
+              discografía, galería de fotos, videoclips y mucho más.
+            </p>
+            <a
+              href="biografia.html"
+              class="btn btn-primary"
+              style="max-width: 250px"
+              >Conoce más sobre LP</a
+            >
           </div>
-        </section>
-      </div>
-      <!-- Noticias y Próximos Conciertos más abajo en desktop -->
-      <div class="col-lg-4 mb-4" style="margin-top: 8rem;">
-        <div class="d-flex flex-column gap-4">
-          <!-- Noticias -->
-          <section class="mb-0 p-3 bg-light rounded shadow-sm" style="border-left: 5px solid var(--lp-color);">
-            <h2 class="h5 mb-3 text-primary">Noticias</h2>
-            <ul class="mb-0">
-              <li>LP anunció una nueva gira mundial para 2025.</li>
-              <li>Nuevo sencillo disponible en todas las plataformas.</li>
-            </ul>
-          </section>
-          <!-- Próximos Conciertos -->
-          <section class="mb-0 p-3 bg-light rounded shadow-sm" style="border-left: 5px solid var(--lp-color);">
-            <h2 class="h5 mb-3 text-primary">Próximos Conciertos</h2>
-            <ul class="mb-0">
-              <li>Buenos Aires - 15/08/2025</li>
-              <li>Córdoba - 18/08/2025</li>
-              <li>Rosario - 20/08/2025</li>
-            </ul>
-          </section>
         </div>
       </div>
-    </div>
-  </main>
-
- <!-- ...footer... -->
-<footer class="bg-dark text-white py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h5 class="text-primary">Sobre LP Fan Page</h5>
-        <p>
-          Un sitio dedicado a los fans de LP, donde puedes explorar su
-          música, biografía, galería y más.
-        </p>
+      <div class="row">
+        <!-- Fragmentos de Letras -->
+        <div class="col-lg-8 mb-4">
+          <section>
+            <h2 class="text-center mb-4 text-primary">Fragmentos de Letras</h2>
+            <div id="lyrics-list" class="row row-cols-1 row-cols-md-2 g-4">
+              <!-- aca se mostrarán los fragmentos de letras -->
+            </div>
+          </section>
+        </div>
+        <!-- Noticias y Próximos Conciertos más abajo en desktop -->
+        <div class="col-lg-4 mb-4" style="margin-top: 8rem">
+          <div class="d-flex flex-column gap-4">
+            <!-- Noticias -->
+            <section
+              class="mb-0 p-3 bg-light rounded shadow-sm"
+              style="border-left: 5px solid var(--lp-color)"
+            >
+              <h2 class="h5 mb-3 text-primary">Noticias</h2>
+              <ul class="mb-0">
+                <li>LP anunció una nueva gira mundial para 2025.</li>
+                <li>Nuevo sencillo disponible en todas las plataformas.</li>
+              </ul>
+            </section>
+            <!-- Próximos Conciertos -->
+            <section
+              class="mb-0 p-3 bg-light rounded shadow-sm"
+              style="border-left: 5px solid var(--lp-color)"
+            >
+              <h2 class="h5 mb-3 text-primary">Próximos Conciertos</h2>
+              <ul class="mb-0">
+                <li>Buenos Aires - 15/08/2025</li>
+                <li>Córdoba - 18/08/2025</li>
+                <li>Rosario - 20/08/2025</li>
+              </ul>
+            </section>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h5 class="text-primary">Enlaces rápidos</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="index.html" class="text-primary text-decoration-none">Inicio</a>
-          </li>
-          <li>
-            <a href="biografia.html" class="text-primary text-decoration-none">Biografía</a>
-          </li>
-          <li>
-            <a href="discografia.html" class="text-primary text-decoration-none">Discografía</a>
-          </li>
-          <li>
-            <a href="galeria.html" class="text-primary text-decoration-none">Galería</a>
-          </li>
-          <li>
-            <a href="api.html" class="text-primary text-decoration-none">Videoclips</a>
-          </li>
-          <li>
-            <a href="contacto.html" class="text-primary text-decoration-none">Contacto</a>
-          </li>
-        </ul>
+    </main>
+
+    <!-- ...footer... -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-primary">Sobre LP Fan Page</h5>
+            <p>
+              Un sitio dedicado a los fans de LP, donde puedes explorar su
+              música, biografía, galería y más.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-primary">Enlaces rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-primary text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="biografia.html"
+                  class="text-primary text-decoration-none"
+                  >Biografía</a
+                >
+              </li>
+              <li>
+                <a
+                  href="discografia.html"
+                  class="text-primary text-decoration-none"
+                  >Discografía</a
+                >
+              </li>
+              <li>
+                <a href="galeria.html" class="text-primary text-decoration-none"
+                  >Galería</a
+                >
+              </li>
+              <li>
+                <a href="api.html" class="text-primary text-decoration-none"
+                  >Videoclips</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contacto.html"
+                  class="text-primary text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5 class="text-primary">Síguenos</h5>
+            <a
+              href="https://www.instagram.com/iamlpofficial/"
+              target="_blank"
+              class="text-lp me-3"
+            >
+              <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/iamLP/"
+              target="_blank"
+              class="text-lp me-3"
+            >
+              <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
+            </a>
+            <a href="https://twitter.com/iamlp" target="_blank" class="text-lp">
+              <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>&copy; 2025 LP Fan Page. Todos los derechos reservados.</p>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <h5 class="text-primary">Síguenos</h5>
-        <a href="https://www.instagram.com/iamlpofficial/" target="_blank" class="text-lp me-3">
-          <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
-        </a>
-        <a href="https://www.facebook.com/iamLP/" target="_blank" class="text-lp me-3">
-          <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
-        </a>
-        <a href="https://twitter.com/iamlp" target="_blank" class="text-lp">
-          <i class="bi bi-twitter" style="font-size: 1.5rem"></i>
-        </a>
-      </div>
-    </div>
-    <div class="text-center mt-3">
-      <p>&copy; 2025 LP Fan Page. Todos los derechos reservados.</p>
-    </div>
-  </div>
-</footer>
+    </footer>
 
+    <!-- script para cargar letras -->
+    <script>
+      async function cargarLetras() {
+        const canciones = [
+          { artista: "LP", cancion: "Lost on You" },
+          { artista: "LP", cancion: "Muddy Waters" },
+          { artista: "LP", cancion: "When We're High" },
+          { artista: "LP", cancion: "Strange" },
+        ];
+        const lyricsList = document.getElementById("lyrics-list");
+        lyricsList.innerHTML = "";
 
-
-  <!-- script para cargar letras -->
-  <script>
-  async function cargarLetras() {
-    const canciones = [
-      { artista: "LP", cancion: "Lost on You" },
-      { artista: "LP", cancion: "Muddy Waters" },
-      { artista: "LP", cancion: "When We're High" },
-      { artista: "LP", cancion: "Strange" }
-    ];
-    const lyricsList = document.getElementById('lyrics-list');
-    lyricsList.innerHTML = "";
-
-    for (const item of canciones) {
-      try {
-        const res = await fetch(`https://api.lyrics.ovh/v1/${encodeURIComponent(item.artista)}/${encodeURIComponent(item.cancion)}`);
-        const data = await res.json();
-        let letra = data.lyrics
-          ? data.lyrics.split('\n').slice(0, 4).join('<br>')
-          : "Letra no disponible.";
-        const card = document.createElement('div');
-        card.classList.add('col');
-        card.innerHTML = `
+        for (const item of canciones) {
+          try {
+            const res = await fetch(
+              `https://api.lyrics.ovh/v1/${encodeURIComponent(
+                item.artista
+              )}/${encodeURIComponent(item.cancion)}`
+            );
+            const data = await res.json();
+            let letra = data.lyrics
+              ? data.lyrics.split("\n").slice(0, 4).join("<br>")
+              : "Letra no disponible.";
+            const card = document.createElement("div");
+            card.classList.add("col");
+            card.innerHTML = `
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title">${item.cancion}</h5>
@@ -166,11 +233,11 @@
             </div>
           </div>
         `;
-        lyricsList.appendChild(card);
-      } catch (e) {
-        const card = document.createElement('div');
-        card.classList.add('col');
-        card.innerHTML = `
+            lyricsList.appendChild(card);
+          } catch (e) {
+            const card = document.createElement("div");
+            card.classList.add("col");
+            card.innerHTML = `
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title">${item.cancion}</h5>
@@ -178,13 +245,13 @@
             </div>
           </div>
         `;
-        lyricsList.appendChild(card);
+            lyricsList.appendChild(card);
+          }
+        }
       }
-    }
-  }
-  window.onload = cargarLetras;
-  </script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      window.onload = cargarLetras;
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

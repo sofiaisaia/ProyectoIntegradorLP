@@ -215,3 +215,13 @@ footer a:hover {
   box-shadow: none !important;
   transform: none !important;
 }
+
+.banner-logo-lp {
+  background-image: url('https://www.theaudiodb.com/images/media/artist/logo/xvwytt1558938503.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #222;
+  position: relative;
+  /* height: 260px;  Si lo ponés acá, podés sacar el style inline */
+}
