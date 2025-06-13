@@ -1,138 +1,217 @@
-/* ==== ESTILOS GENERALES ==== */
+/* color principal de la fanpage */
+:root {
+    --lp-color: #5c6e89; /* azul grisáceo principal */
+    --lp-color-sec: #3e4a5a; /* tono más oscuro para detalles */
+    --lp-color-soft: #eaf0f6; /* fondo suave para secciones claras */
+}
+
+/* fuente y fondo general del sitio */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9fa; /* Fondo más claro */
-    color: #333; /* Texto ligeramente más suave */
+    background-color: var(--lp-color-soft); /* fondo suave */
+    color: var(--lp-color-sec); /* texto general en tono oscuro */
     margin: 0;
     padding: 0;
 }
 
-/* ==== ENCABEZADO ==== */
+/* header con fondo suave */
 header {
-    background-color: #e3e4e8; /* Suaviza el fondo del encabezado */
+    background-color: #e3e4e8;
 }
 
 header h1 {
     font-size: 1.5rem;
-    color: #121212; /* Texto más suave */
+    color: var(--lp-color-sec);
 }
 
-/* ==== NAVBAR ==== */
+/* navbar siempre negro, marca blanca y links destacados en color lp */
 .navbar {
-    background-color: #070707; /* Fondo oscuro */
+    background-color: #000 !important;
 }
 
-/* Personalizar el título del navbar */
 .navbar-brand {
-    font-size: 2rem; /* Tamaño más grande */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; /* Cambiar la fuente */
-    font-weight: bold; /* Negrita */
-    color: #fff; /* Asegurar que el color sea blanco */
-    transition: color 0.3s ease; /* Efecto de transición al pasar el cursor */
-  }
-  
-  .navbar-brand:hover {
-    color: #a6c8ff; /* Cambiar el color al pasar el cursor */
-  }
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #fff !important;
+    transition: color 0.3s;
+}
 
+.navbar-brand:hover {
+    color: var(--lp-color) !important;
+}
 
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--lp-color) !important;
+    font-weight: 600;
+}
 
-/* ==== MAIN ==== */
-main h2 {
-    color: #5a5a5a; /* Tono más suave para los títulos */
+/* todos los títulos en color lp */
+main h1,
+main h2,
+main h3,
+main h4,
+main h5 {
+    color: var(--lp-color);
     margin-bottom: 20px;
 }
 
+/* párrafos más legibles */
 main p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555; /* Texto más suave */
+    color: var(--lp-color-sec);
 }
 
-/* ==== TARJETAS ==== */
+/* tarjetas con sombra y efecto al pasar el mouse */
 .card {
     border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(92,110,137,0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Efecto de zoom */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(92,110,137,0.18);
 }
 
 .card-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: var(--lp-color);
 }
 
 .card-img-top {
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5px;
+    border: 2px solid var(--lp-color-soft);
 }
 
-/* ==== BOTONES ==== */
-.btn-primary {
-    background-color: #1b4ef6; /* Azul claro */
-    border: none;
+/* botones principales en color lp */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover {
+    background-color: var(--lp-color) !important;
+    border-color: var(--lp-color-sec) !important;
+    color: #fff !important;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 8px rgba(92,110,137,0.10);
 }
 
 .btn-primary:hover {
-    background-color: #599fef; /* Azul más oscuro */
+    background-color: var(--lp-color-sec) !important;
 }
 
-/* ==== FORMULARIOS ==== */
-.form-control:focus {
-    box-shadow: 0 0 5px #a6c8ff; /* Azul claro */
-    border-color: #a6c8ff;
+/* etiquetas de formulario en color lp */
+.form-label {
+    color: var(--lp-color) !important;
 }
 
+/* bordes y foco de inputs en color lp */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--lp-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(92,110,137,.18) !important;
+}
+
+.border-primary {
+    border-color: var(--lp-color) !important;
+}
+
+/* mensajes de error en formularios */
 .invalid-feedback {
     font-size: 0.9rem;
-    color: #e57373; /* Rojo más suave */
+    color: #e57373;
 }
 
+/* label de checkbox y radio más legible */
 .form-check-label {
     font-weight: 500;
-    color: #555; /* Texto más suave */
+    color: var(--lp-color-sec);
 }
 
-/* ==== FOOTER ==== */
+/* checkbox marcados en color lp */
+.form-check-input:checked {
+    background-color: var(--lp-color) !important;
+    border-color: var(--lp-color) !important;
+}
+
+/* enlaces destacados en color lp y efecto al pasar el mouse */
+a.text-primary,
+a.text-primary:visited,
+a.text-primary:focus,
+a.text-primary:hover {
+    color: var(--lp-color) !important;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a.text-primary:hover {
+    color: var(--lp-color-sec) !important;
+    transform: scale(1.05);
+}
+
+/* footer oscuro, textos claros y links en color lp */
 footer {
-    background-color: #1a1a1a; /* Fondo oscuro */
+    background-color: #1a1a1a;
     color: #ddd;
     padding: 20px 0;
 }
 
+footer h5 {
+    color: var(--lp-color);
+}
+
 footer a {
-    color: #a6c8ff;
+    color: var(--lp-color) !important;
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s, transform 0.3s;
 }
 
 footer a:hover {
-    color: #fff;
-    transform: scale(1.1); /* Efecto de zoom */
+    color: #fff !important;
+    transform: scale(1.1);
 }
 
-/* ==== CARRUSEL DE GALERÍA ==== */
+/* imágenes del carrusel con borde redondeado y sombra */
 .carousel-item img {
     object-fit: cover;
     height: 450px;
-    border-radius: 10px; /* Bordes redondeados para suavizar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(92,110,137,0.10);
+    border: 2px solid var(--lp-color-soft);
 }
 
-/* ==== RESPONSIVE PERSONALIZADO ==== */
+/* borde izquierdo personalizado para secciones */
+.lp-border {
+    border-left: 5px solid var(--lp-color) !important;
+}
+
+/* íconos de redes sociales en color lp */
+.text-lp {
+    color: var(--lp-color) !important;
+}
+
+/* ajustes para pantallas chicas */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.2rem;
     }
-
     main h2 {
         font-size: 1.5rem;
     }
+    .carousel-item img {
+        height: 250px;
+    }
+}
+.sin-hover .card:hover,
+.sin-hover .card:focus,
+.sin-hover .card:active {
+  box-shadow: none !important;
+  transform: none !important;
 }
